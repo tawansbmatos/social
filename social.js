@@ -1,25 +1,29 @@
-'use strict';
+let time = 5000,
+    currentImageIndex = 0,
+    images = document
+                .querySelectorAll("#slider img")
+    max = images.length;
 
-const imagens = [
-    { 'id': '1', 'url': 'img/img-3.jpg' },
-    { 'id': '2', 'url': 'img/img-2.jpg' },
-    { 'id': '3', 'url': 'img/img-1.jpg' },
+function nextImage() {
 
-]
+    images[currentImageIndex]
+        .classList.remove("selected")
 
-const container = document.querySelector('#container__img')
+    currentImageIndex++
 
-const loadImagens = ( imagens, container ) => {
-    imagens.forEach(imagens => {
-        container.innerHTML = `
-        <div class="conteudo__imagens" id="container__img">
-            <img src="img/img-3.jpg" alt="">
-            <img src="img/img-2.jpg" alt="">
-            <img src="img/img-1.jpg" alt="">
-        </div>
-        `
-    });
+    if(currentImageIndex >= max)
+        currentImageIndex = 0
+
+    images[currentImageIndex]
+        .classList.add("selected")
 }
 
+function start() {
+    setInterval(() => {
+        // troca de image
+        nextImage()
+    }, time)
+}
 
-loadImagens( imagens, container );
+window.addEventListener("load", start)
+

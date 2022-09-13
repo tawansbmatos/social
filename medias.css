@@ -1,0 +1,18 @@
+
+
+
+
+@media screen  and (max-width: 768px){
+    .container__cards {
+        width: 90%;
+        margin: auto;
+        
+    }
+    .container__geralSection1{
+        width: 89%;
+        margin: auto;
+    }
+
+    
+    
+}

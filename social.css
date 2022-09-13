@@ -100,9 +100,10 @@ html {
 
 /*cards*/
 .container__cards {
-    margin-top: 50px;
     display: flex;
     flex-wrap: nowrap;
+   
+    
 
 }
 
@@ -114,14 +115,19 @@ html {
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
+    box-shadow: 0px 0px 5px #5f63686a;
 }
 
-.conteudo__cards {}
+.conteudo__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .conteudo__cards h2 {
     color: #fff;
     font-size: 20px;
-    padding: 4px 10px;
+   
 }
 
 .container__cards p {
@@ -143,6 +149,7 @@ html {
     border-radius: 5px;
     display: none;
     border: 1px solid #5f6368;
+
 }
 
 .section__card1 {}
@@ -167,7 +174,7 @@ html {
 #icone__rocket{
     font-size: 75px;
     color: #5f6368;
-    margin-left: 26px;
+    text-align: center;
     
     
 }
@@ -178,15 +185,15 @@ html {
 #icone__ideia{
     font-size: 75px;
     color: #5f6368;
-    margin-left: 20px;
+    text-align: center;
 }
 #icone__ideia:hover{
     transform: translatey(-5px);
 }
 #icone__praticas{
-    font-size: 70px;
+    font-size: 75px;
     color: #5f6368;
-    margin-left: 20px;
+    text-align: center;
 }
 #icone__praticas:hover{
     transform: translatey(-5px);
@@ -194,10 +201,39 @@ html {
 #icone__{
     font-size: 75px;
     color: #5f6368;
-    margin-left: 20px;
+    text-align: center;
 }
 #icone__:hover{
     transform: translatey(-5px);
+}
+
+
+/*img slider*/
+#slider {
+    width: 88%;
+    max-width: 500px;
+    height: 45vw;
+    max-height: 150px;
+    position: relative;
+    margin-top: 65px;
+    margin:  65px auto 10px ;
+}
+
+#slider img{
+    opacity: 0;
+    border-radius: 5px;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+    
+
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
 }
 
 /*footer*/
@@ -210,22 +246,4 @@ html {
 }
 .conteudo__footer{
 
-}
-/*img slider*/
-.container__imagens{
-    max-width: 768px;
-    margin: 5px;
-   
-    
-}
-.conteudo__imagens{
-    display: flex;
-    overflow: hidden;
-   
-}
-.conteudo__imagens img{
-    width: 100%;
-    height: 300px;
-    border: 1px solid #5f6368;
-    border-radius: 5px;
 }

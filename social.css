@@ -16,18 +16,20 @@ html {
     width: 100%;
     max-width: 768px;
     background-color: #202124;
+    margin: auto;
 }
 
 .container__geral {
     border-radius: 13px;
-
-
 }
 
 #menu__hamburguer {
     color: #5f6368;
     font-size: 35px;
     cursor: pointer;
+}
+#menu__hamburguer:hover{
+    color: #fff;
 }
 
 .container__iconemenu__form {
@@ -52,9 +54,12 @@ html {
     display: none;
     margin-top: 50px;
 
+
 }
 
-.menu {}
+.menu {
+    margin-bottom: -50px;
+}
 
 .lista__menu {}
 
@@ -100,26 +105,30 @@ html {
 
 /*cards*/
 .container__cards {
-    display: flex;
-    flex-wrap: nowrap;
-   
-    
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    max-width: 700px;
+    padding: 5px;
+    justify-content: center;
 }
 
 .cards {
-    width: 250px;
+
+    width: 100px;
     height: 100px;
     border: 1px solid #5f6368;
-    margin: 5px;
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
     box-shadow: 0px 0px 5px #5f63686a;
+   
+
 }
 
 .conteudo__cards {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
 }
@@ -127,7 +136,8 @@ html {
 .conteudo__cards h2 {
     color: #fff;
     font-size: 20px;
-   
+
+
 }
 
 .container__cards p {
@@ -141,7 +151,7 @@ html {
 .container__section1,
 .container__section2,
 .container__section3,
-.container__section4 {
+.container__section4{
     width: 99%;
     margin: auto;
     padding: 10px;
@@ -149,20 +159,37 @@ html {
     border-radius: 5px;
     display: none;
     border: 1px solid #5f6368;
+    margin-top: 5px;
 
+}
+.container__section5,
+.container__section6,
+.container__section7,
+.container__section8{
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    background-color: #202124;
+    border-radius: 5px;
+    display: none;
+    border: 1px solid #5f6368;
+    margin-top: 5px;
 }
 
 .section__card1 {}
 
 .section__card1 h2 {
     color: #5f6368;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .section__card1 p {
     color: #fff;
 }
-.conteudo__cards h2{
-    font-size: 14px;
+
+.conteudo__cards h2 {
+    font-size: 12px;
     text-align: center;
     text-transform: capitalize;
     color: #5f6368;
@@ -171,39 +198,46 @@ html {
 
 
 /*icones*/
-#icone__rocket{
-    font-size: 75px;
+#icone__rocket {
+    font-size: 70px;
     color: #5f6368;
     text-align: center;
-    
-    
+
+
 }
-#icone__rocket:hover{
+
+#icone__rocket:hover {
     transform: translatey(-5px);
-    
+
 }
-#icone__ideia{
-    font-size: 75px;
+
+#icone__ideia {
+    font-size: 70px;
     color: #5f6368;
     text-align: center;
 }
-#icone__ideia:hover{
-    transform: translatey(-5px);
-}
-#icone__praticas{
-    font-size: 75px;
-    color: #5f6368;
-    text-align: center;
-}
-#icone__praticas:hover{
+
+#icone__ideia:hover {
     transform: translatey(-5px);
 }
-#icone__{
-    font-size: 75px;
+
+#icone__praticas {
+    font-size: 70px;
     color: #5f6368;
     text-align: center;
 }
-#icone__:hover{
+
+#icone__praticas:hover {
+    transform: translatey(-5px);
+}
+
+#icone__ {
+    font-size: 70px;
+    color: #5f6368;
+    text-align: center;
+}
+
+#icone__:hover {
     transform: translatey(-5px);
 }
 
@@ -216,10 +250,10 @@ html {
     max-height: 150px;
     position: relative;
     margin-top: 65px;
-    margin:  65px auto 10px ;
+    margin: 65px auto 10px;
 }
 
-#slider img{
+#slider img {
     opacity: 0;
     border-radius: 5px;
     position: absolute;
@@ -227,23 +261,50 @@ html {
     width: 100%;
     height: 100%;
     object-fit: inherit;
-    
+
 
     transition: opacity 800ms;
 }
 
-#slider img.selected { 
+#slider img.selected {
     opacity: 1;
 }
 
 /*footer*/
-.container__footer{
+.container__footer {
+    background-color: #1414167b;
+    position: fixed;
+    width: 100%;
+    bottom: 5px;
+    height: 60px;  
+    box-shadow: 0px 0px 5px #5f6368;
+    padding: 10px;
 
+}
+
+.footer {
+    
+}
+
+.conteudo__footer {}
+
+.nav__footer ul {
+    display: flex;
+    justify-content: center;
+    
    
 }
-.footer{
-   
-}
-.conteudo__footer{
 
+.nav__footer ul li {
+    padding: 0px 10px 0px 10px;
+}
+
+/*spans dos icones da navegação do footer*/
+#sp{
+    color: #5f6368;
+    font-size: 40px;  
+}
+#sp:hover{
+    transform: translateY(-5px);
+    color: #fff;
 }

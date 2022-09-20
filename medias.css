@@ -4,7 +4,7 @@
 
 @media screen  and (max-width: 768px){
     .container__geral__todos{
-        width: 85%;
+        width: 100%;
         margin: auto;
     }
     .container__iconemenu__form{
@@ -16,8 +16,11 @@
     }
     .nav{
         width: 100vw;
-        margin-left: -40px;
+        margin-left: -20px;
         
+    }
+    .container__main{
+        width: 100%;
     }
     .container__cards {
         width: 100%;
@@ -45,7 +48,7 @@
 @media screen  and (max-width: 366px){
 
     .container__geral__todos{
-        width: 85%;
+        width: 100%;
         margin: auto;
     }
     .container__iconemenu__form{
@@ -57,7 +60,7 @@
     }
     .nav{
         width: 100vw;
-        margin-left: -40px;
+        margin-left: -20px;
         
     }
     .container__cards {

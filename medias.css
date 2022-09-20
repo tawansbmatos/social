@@ -3,13 +3,38 @@
 
 
 @media screen  and (max-width: 768px){
+    .container__geral__todos{
+        width: 85%;
+        margin: auto;
+    }
+    .container__iconemenu__form{
+        left: 0;
+        
+    }
+    .foto__perfil img{
+        margin-right: 10px;
+    }
+    .nav{
+        width: 100vw;
+        margin-left: -40px;
+        
+    }
     .container__cards {
-        width: 90%;
+        width: 100%;
         margin: auto;
         
     }
     .container__geralSection1{
         width: 89%;
+        margin: auto;
+    }
+    .container__main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .container__footer{
+        left: 0;
         margin: auto;
     }
 

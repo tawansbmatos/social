@@ -16,8 +16,7 @@
     }
     .nav{
         width: 100vw;
-        
-        
+              
     }
     
     .container__main{
@@ -41,9 +40,7 @@
         left: 0;
         margin: auto;
     }
-
-    
-    
+  
 }
 @media screen and (max-width: 376px)  {
     #ps{

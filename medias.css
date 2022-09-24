@@ -58,6 +58,11 @@
        height: 250px;
        margin-left: 20px;
     }
+    #items{
+        width: 329px;
+        height: 200px;
+        margin-left: 3px;
+    }
     
     
     
@@ -74,6 +79,12 @@
         height: 100%;
         margin-left: 5px;
         object-fit: cover;
+    }
+    #items{
+        width: 365px;
+        margin-left: 3px;
+        height: 200px;
+       
     }
 }
 

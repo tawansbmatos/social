@@ -87,8 +87,9 @@ html {
 
 .menu {}
 
-.lista__menu {}
-
+.lista__menu {
+   
+}
 .lista__menu li {
     padding: 10px;
     vertical-align: baseline;
@@ -109,14 +110,15 @@ html {
 }
 
 /*slids das imagens*/
-#items-wrapper{
+#items-wrapper {
     width: 100vw;
     display: flex;
     justify-content: center;
-    
-    
+
+
 }
-#items{
+
+#items {
     margin-right: 13px;
     display: flex;
     max-width: 450px;
@@ -126,16 +128,18 @@ html {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
-.item{
-   flex: none;
-   width: 90%;
-   height: 300px;
-   pointer-events: none;
-  
+
+.item {
+    flex: none;
+    width: 90%;
+    height: 300px;
+    pointer-events: none;
+
 }
-.item img{
-   object-fit: cover;
-   width: 100%;
+
+.item img {
+    object-fit: cover;
+    width: 100%;
     height: 99%;
 }
 
@@ -153,14 +157,14 @@ html {
     margin-bottom: 10px;
     border-radius: 5px;
     margin: 10px auto;
-    
+
 
 
 }
 
 .card {
     height: 150px;
-   
+
 
 }
 
@@ -171,7 +175,7 @@ html {
 .card span {
     display: flex;
     justify-content: center;
-    
+
     font-size: 80px;
     padding: 10px;
     cursor: pointer;
@@ -184,13 +188,14 @@ html {
     font-size: 25px;
     margin-bottom: 20px;
 }
+
 /*icones de expandir, dentro dos cards*/
-#i-less{
-   padding-top: 30px;
-   margin-left: 43%;
-   font-size: 50px;
-   cursor: pointer;
-  
+#i-less {
+    padding-top: 30px;
+    margin-left: 43%;
+    font-size: 50px;
+    cursor: pointer;
+
 }
 
 
@@ -200,7 +205,7 @@ html {
 #card4,
 #card5,
 #card6,
-#card7{
+#card7 {
     display: none;
     color: #fff;
     text-align: justify;

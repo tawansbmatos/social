@@ -42,6 +42,12 @@ html {
     height: 50px;
     width: 100vw;
     top: 0;
+    
+}
+#title__project{
+    color: #5f6368;
+    margin-right: 210px;
+   
 }
 
 .conteudo__icones__nav {
@@ -61,19 +67,6 @@ html {
     padding-right: 30px;
 
 
-}
-
-#sp {
-    color: #5f6368;
-    font-size: 37px;
-    margin-right: 40px;
-
-
-}
-
-#sp:hover {
-
-    color: #fff;
 }
 
 
@@ -109,48 +102,25 @@ html {
     background-color: rgba(255, 255, 255, 0.142);
 }
 
-/*slids das imagens*/
-#items-wrapper {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-
-
-}
-
-#items {
-    margin-right: 13px;
-    display: flex;
-    max-width: 450px;
-    overflow-x: auto;
-    margin-top: 60px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    
-}
-
-.item {
-    flex: none;
-    width: 97%;
-    height: 300px;
-   
-
-}
-
-.item img {
-    object-fit: cover;
-    width: 100%;
-    height: 99%;
-    position: none;
-}
-
-/*cards*/
-
 .container__main {
     width: 100%;
 
 
+}
+#items-wrapper{
+   
+
+}
+.item{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.item img{
+    width: 430px;
 }
 
 .cards {
@@ -189,6 +159,42 @@ html {
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
+}
+
+/*card pequenos*/
+.card__menores{
+    display: flex;
+    justify-content: center;
+   padding: 5px;
+    margin: auto;
+
+   
+  
+}
+.card__men{
+    border: 1px solid #5f6368;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;  
+    flex-direction: column;
+    width: 200px;
+    height: 70px;
+    
+}
+.card__men:hover{
+    background-color: #5f636855;
+}
+.card__men  span{
+    color: #5f6368;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+}
+.card__men  h3{
+    font-size: 13px;
+    text-align: center;
+    color: #5f6368;
+    text-transform: capitalize;
 }
 
 /*icones de expandir, dentro dos cards*/

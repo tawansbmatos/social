@@ -196,6 +196,7 @@ html {
    
 }
 .card__men  h3{
+    margin-top: 10px;
     font-size: 13px;
     text-align: center;
     color: #5f6368;

@@ -74,9 +74,9 @@ html {
     width: 100%;
     background-color: #5f6368;
     display: none;
-    margin-top: 50px;
+    margin: auto;
     position: fixed;
-    top: 0;
+    
 }
 
 .menu {}
@@ -109,7 +109,8 @@ html {
 
 }
 #items-wrapper{
-   
+   max-width: 88%;
+   margin: auto;
 
 }
 .item{
@@ -121,7 +122,8 @@ html {
 }
 
 .item img{
-    width: 430px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .cards {

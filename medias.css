@@ -1,8 +1,9 @@
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 290px) {
     body {}
 
     .nav {
         width: 100%;
+        background-color: aqua;
     }
 
     #img-inicio {
@@ -42,15 +43,25 @@
 @media screen and (max-width: 376px) {
     body {
         max-width: 376px;
+       
+    }
+    .container__geral{
+       
     }
 
     .nav {
         width: 100%;
+        
+    }
+    #items-wrapper{
+       
+        
     }
 
-    .item img {
-        max-width: 376px;
-        width: 360px;
+    #img-inicio {
+        
+        max-width: 350px;
+        width: 350px;
         border: 1px solid #5f636865;
         border-radius: 5px;
     }
@@ -58,14 +69,21 @@
     #title__project {
         margin: auto;
     }
+    .container__main{
+        width: 97%;
+        margin: auto;
+    }
 
     .cards {
-        width: 95%;
+       
 
     }
 
     .card__menores {
-        width: 100%;
+        width: 90%;
+    }
+    #card__men{
+       
     }
 
     #card1 {
@@ -218,7 +236,7 @@
     }
 
     .card__menores {
-        width: 100%;
+        width: 98%;
     }
 
     #card1 {

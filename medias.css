@@ -1,19 +1,15 @@
-@media screen and (max-width: 300px) {
-    body {
-        max-width: 290px;
-        width: 100%;
-    }
+@media screen and (min-width: 300px) {
+    body {}
 
     .nav {
         width: 100%;
-
-
     }
 
     #img-inicio {
-        width: 260px;
+        width: 77%;
         border: 1px solid #5f636865;
         border-radius: 5px;
+        margin: auto;
     }
 
     #title__project {

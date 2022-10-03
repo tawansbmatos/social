@@ -1,16 +1,30 @@
+@media screen and (min-width: 676px ) {
+
+}
+
 @media screen and (max-width: 290px) {
     body {}
 
     .nav {
-        width: 100%;
-        background-color: aqua;
+        
+        
     }
+    #items-wrapper{
+        display: flex;
+        justify-content: center;
+    
+    }
+    .item{
+      
+       
+    }
+    
 
     #img-inicio {
-        width: 77%;
+        width: 50%;
         border: 1px solid #5f636865;
         border-radius: 5px;
-        margin: auto;
+        
     }
 
     #title__project {
@@ -50,18 +64,22 @@
     }
 
     .nav {
-        width: 100%;
+        
         
     }
+    
     #items-wrapper{
        
         
     }
+    .item{
+        display: flex;
+        justify-content: center;
+    }
 
     #img-inicio {
+        width: 270px;
         
-        max-width: 350px;
-        width: 350px;
         border: 1px solid #5f636865;
         border-radius: 5px;
     }
@@ -221,7 +239,7 @@
     .item img {
         margin-top: 13px;
         max-width: 413px;
-        width: 405px;
+        width: 390px;
         border: 1px solid #5f636865;
         border-radius: 5px;
     }

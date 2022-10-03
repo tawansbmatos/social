@@ -109,20 +109,20 @@ html {
 
 }
 #items-wrapper{
-   max-width: 88%;
-   margin: auto;
+    display: flex;
+    justify-content: center;
 
 }
 .item{
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    margin-top: 30%;
+    width: 200px;
+    max-width: 200px;
+   
 }
 
-.item img{
-    width: 100%;
+#img-inicio{
+    
+   
     border-radius: 5px;
 }
 
